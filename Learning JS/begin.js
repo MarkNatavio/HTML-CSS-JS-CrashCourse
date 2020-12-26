@@ -11,7 +11,7 @@
 // Variables
 let age = 0; // integers
 let name = 'Mark'; // string
-let boolean = True; // boolean
+let boolean = true; // boolean
 let strArray = ['hello', 'there']; // array
 
 // Objects
