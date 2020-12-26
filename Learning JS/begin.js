@@ -19,7 +19,7 @@ let strArray = ['hello', 'there']; // array
 let objectName = {
     age: 23,
     name: 'I have name',
-    boolean: True,
+    boolean: true,
     strArray: ['I am real', 'I am human']
 };
 
@@ -32,8 +32,8 @@ functionName(age); // function call
 
 // loops
 let counter = 0;
-while (counter < length(name)){
-    print(counter);
+while (counter < 4){
+    console.log(counter);
     counter++;
 }
 
@@ -46,4 +46,7 @@ console.log(strArray);
 console.log(strArray[0]);
 console.log(objectName);
 console.log(objectName.name);
+console.log(objectName.age);
+console.log(objectName.boolean);
+console.log(objectName.strArray);
 
