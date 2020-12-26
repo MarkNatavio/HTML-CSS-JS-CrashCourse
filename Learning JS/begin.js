@@ -30,6 +30,14 @@ function functionName(parameter){ // function
 
 functionName(age); // function call
 
+// loops
+let counter = 0;
+while (counter < length(name)){
+    print(counter);
+    counter++;
+}
+
+
 // Printing out values in the command line
 console.log(age);
 console.log(name);
