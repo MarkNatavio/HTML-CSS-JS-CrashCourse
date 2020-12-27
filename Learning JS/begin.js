@@ -11,7 +11,7 @@
 // Variables
 let age = 0; // integers
 let name = 'Mark'; // string
-let boolean = True; // boolean
+let boolean = true; // boolean
 let strArray = ['hello', 'there']; // array
 
 // Objects
@@ -19,7 +19,7 @@ let strArray = ['hello', 'there']; // array
 let objectName = {
     age: 23,
     name: 'I have name',
-    boolean: True,
+    boolean: true,
     strArray: ['I am real', 'I am human']
 };
 
@@ -32,8 +32,8 @@ functionName(age); // function call
 
 // loops
 let counter = 0;
-while (counter < length(name)){
-    print(counter);
+while (counter < 4){
+    console.log(counter);
     counter++;
 }
 
