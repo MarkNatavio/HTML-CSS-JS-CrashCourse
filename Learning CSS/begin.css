@@ -1,4 +1,12 @@
+/*
+CSS (Cascading Style Sheet) controls the appearance of the website
+*/
+
 body {
     background-color:black;
     color:aliceblue
+}
+p{
+    background-color: black;
+    color:white
 }
