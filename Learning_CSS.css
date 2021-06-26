@@ -20,3 +20,23 @@ div{
     height: 200px;
     width: 600px;
 }
+
+
+#rep{
+    height: 100px;
+    background-image: url("dog-puppy-on-garden-royalty-free-image-1586966191.jpeg");
+    background-repeat: repeat;
+    background-size: 100px;
+}
+#repx{
+    height: 100px;
+    background-image: url("dog-puppy-on-garden-royalty-free-image-1586966191.jpeg");
+    background-repeat: repeat-x;
+    background-size: 100px;
+}
+#norep{
+    height: 100px;
+    background-image: url("dog-puppy-on-garden-royalty-free-image-1586966191.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
