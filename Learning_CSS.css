@@ -1,12 +1,22 @@
 /*
 CSS (Cascading Style Sheet) controls the appearance of the website
-*/
 
-body {
-    background-color:black;
-    color:aliceblue
+CSS has text properties that can change the font, size, color, background, and more of a text
+*/
+div{
+    background-color: white;
+    color:black;
+    color:rgb(0, 0, 0);
+    color:#000000
 }
-p{
-    background-color: black;
-    color:white
+
+#box1{
+    background-color: grey;
+    border-style: solid;
+    border-width: 15px;
+    border-color: black;
+    margin: 50px;
+    padding: 40px 50px 80px 50px;
+    height: 200px;
+    width: 600px;
 }
