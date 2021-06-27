@@ -10,6 +10,10 @@ div{
     color:#000000
 }
 
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+
 #box1{
     background-color: grey;
     border-style: solid;
@@ -21,22 +25,27 @@ div{
     width: 600px;
 }
 
-
 #rep{
-    height: 100px;
+    height: 500px;
     background-image: url("dog-puppy-on-garden-royalty-free-image-1586966191.jpeg");
     background-repeat: repeat;
     background-size: 100px;
 }
 #repx{
-    height: 100px;
+    height: 500px;
     background-image: url("dog-puppy-on-garden-royalty-free-image-1586966191.jpeg");
     background-repeat: repeat-x;
     background-size: 100px;
 }
 #norep{
-    height: 100px;
+    height: 500px;
     background-image: url("dog-puppy-on-garden-royalty-free-image-1586966191.jpeg");
     background-repeat: no-repeat;
+    background-size: 100px;
+}
+#repy{
+    height: 500px;
+    background-image: url("dog-puppy-on-garden-royalty-free-image-1586966191.jpeg");
+    background-repeat: repeat-y;
     background-size: 100px;
 }

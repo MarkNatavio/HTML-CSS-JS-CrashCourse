@@ -49,4 +49,3 @@ console.log(objectName.name);
 console.log(objectName.age);
 console.log(objectName.boolean);
 console.log(objectName.strArray);
-
