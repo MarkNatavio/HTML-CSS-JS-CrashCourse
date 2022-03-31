@@ -1,4 +1,4 @@
-# Vanilla-JS-HTML-CSS-CrashCourse
+# JS-HTML-CSS-CrashCourse
 
 This is a crash course on vanilla HTML, CSS, and JavaScript
 In it you will find basic comands on all the languages and how they work together to create websites
