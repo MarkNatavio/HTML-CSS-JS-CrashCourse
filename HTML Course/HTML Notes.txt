@@ -1,0 +1,6 @@
+What is HTML?
+==============
+HTML stands for Hypertext Markup Language
+It is the way a website is organized and structured
+
+Please read the comments in the index.html file

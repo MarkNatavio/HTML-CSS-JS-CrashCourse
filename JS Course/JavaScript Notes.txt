@@ -1,0 +1,8 @@
+What is JavaScript?
+=====================
+• JavaScript is a scripting langugage that makes a website or app more interactive. 
+• It is the fastest growing and most popular language.
+  - Keep in mind, JavaScript is NOT Java
+• It can calculate, manipulate, and validate data
+
+Please, check out the JavaScript.js file and comments

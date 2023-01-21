@@ -1,0 +1,434 @@
+<!--
+  HTML stands for HyperText Markup Language
+  It is how a website is structured.
+
+  Later we will cover CSS (how a website looks) and JavaScript (how a website functions)
+
+  The way that a website is structures is through tags, as we can see this text has a comment tag at the start. Typically a website is structured as such:
+
+    <DOCTYPE tag>
+    <html opening tag>
+      <head opening tag>
+        ...
+      <head closing tag>
+
+      <body opening tag>
+        ...
+      <body closing tag>
+    <html closing tag>
+
+  This is a more pseudo code than the real deal, so lets take a look at some real code
+-->
+
+<!--
+  Start by making a <!DOCTYPE html> by typing ! and pressing enter
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+  The head contains all metadata relevant to the website. The ones that I have added are some of the common ones to get
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <title>My page</title>
+  </head>
+
+  <!-- 
+  The body contains everything that the user will be looking
+-->
+  <body>
+    <!--
+    There are three different types of elements to be used in the body
+  
+    Inline Elements:
+      • They do not start a new line and take up as much space as required
+      • Cannot set width and height
+      • Ex. <a>
+        
+    Inline-Block Elements:
+      • They do not start a new line and tak eup as much space as required
+      • The width and height can be set
+      • Ex. <img>, <input>
+
+    Block Elements:
+      • They start a new line
+      • Take the full width available
+      • Ex. <div>, <h1> through <h6>, <p>
+
+    Lets take a look at some elements
+  
+  Headers:
+  The tags <h1> through <h6> are header elements. The range from level 1 through level 6 (from most important to least important).
+  -->
+    <h1>This is a header of importance 1 (most important)</h1>
+    <h2>This is a header of importance 2</h2>
+    <h3>This is a header of importance 3</h3>
+    <h4>This is a header of importance 4</h4>
+    <h5>This is a header of importance 5</h5>
+    <h6>This is a header of importance 6 (least important)</h6>
+
+    <br />
+    <hr />
+    <!-- I explain what this tag is later -->
+    <!--
+  Paragraphs:
+  The <p> tag is a paragraph element. It just holds text
+  -->
+    <p>
+      This is a paragraph. Now even though this is a different line in code, it
+      looks like one line in the page. To make multiple lines we need a line
+      break tag (br)
+
+      <br />
+      Like this. <br />
+      Even this works, no need to add extra spaces.
+    </p>
+
+    <br />
+    <hr />
+    <h3>Lets look into some style tags in the text</h3>
+    <!-- Style tags work on text and are all inline elements. -->
+    <strong>strong text</strong> - This bolds the text within <br />
+    <em>em text</em> - emphasis, it italizes the text within <br />
+    <mark>mark text</mark> - highlights the text within <br />
+    <small>small text</small> - makes the text within smaller <br />
+    <del>del text</del> - crosses out the text within <br />
+    <ins>ins text</ins> - underlines the text within <br />
+    <sup>sup text</sup> - makes the text within a superscript <br />
+    <sub>sub text</sub> - makes the text wihtin a subscript <br />
+
+    <br />
+    <hr />
+    <h3>Lets take a look at Division and Span tags</h3>
+    <!--
+  <div></div>
+  • This is a division element. It is a block level element that defines a section in the document.
+  • It is a general purpose container and it is helpful for identifying and separating a group of elements. This allows you to highlight a block of elements and give them a specific format
+
+  <span></span>
+  • This is a span element. It is an inline level element that defines the characterisitics of a section in the document.
+  • It difers with a div tag because it is an inline element, meaning that it can be used as a nested element. It can be used to define the characteristics of a portion within a container.
+  • There is no limit to the number of nested elements, but we must keep track of them.
+
+  Lets look at an example
+  -->
+    <div style="color: blue">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis mollitia
+        perferendis minus consectetur consequatur dicta,
+        <span style="color: red">
+          exercitationem cupiditate ad quia assumenda nihil dolore corrupti
+          delectus sit
+        </span>
+        temporibus sapiente harum doloribus nemo!
+      </p>
+    </div>
+
+    <h3>Self closing tags</h3>
+    <!--
+  Self closing tags are tags that do not require a closing tag. No need for a /
+  It is used to indicate that there is no content within the opening and closing tags
+
+  Examples:
+  -->
+    <hr />
+    <br />
+    <input type="text" title="input1" />
+    <img
+      src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
+      width="150"
+      height="200"
+      alt=""
+    />
+
+    <br />
+    <br />
+    <hr />
+    <h3>Attributes</h3>
+    <!--
+    Attributes are used to provide additional information about HTML elements. They are defined in the opening tags.
+  -->
+    <p title="Title">Hover your mouse over this text to see the title</p>
+    <img
+      src="../Images/fire.png"
+      width="150"
+      alt="alt is a description of the image in case it doesn't load. It also makes it easy to seaerch"
+    />
+    <br />
+    <a href="https://www.google.com/" target="_blank" rel="noopener"
+      >This is an anchor tag</a
+    >
+    <p>we can also make an image clickable this way</p>
+
+    <a href="https://www.google.com/" target="_blank" rel="noopener">
+      <img src="../Images/google_logo.png" alt="google logo" width="200" />
+    </a>
+
+    <p>We can also make it go to another page</p>
+    <a href="./second_page.html">Click me</a>
+
+    <a href="#bookmark">
+      <p>Anchor text to</p>
+    </a>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p id="bookmark">other text</p>
+
+    <br />
+    <hr />
+    <h3>Lists</h3>
+    <!-- 
+    Lists are useful for displaying data, there are 2 kinds, unordered and ordered:
+  -->
+    <p>Unordered List (ul)</p>
+    <ul>
+      <li>Option 1</li>
+      <li>Option 2</li>
+      <li>Option 3</li>
+      <li>Option 4</li>
+      <li>Option 5</li>
+    </ul>
+
+    <p>Ordered List (ol)</p>
+    <ol type="1" start="0">
+      <li>Option 1</li>
+      <li>Option 2</li>
+      <li>Option 3</li>
+      <li>Option 4</li>
+      <li>Option 5</li>
+    </ol>
+    <!--
+  It is worth mentioning that the ordered list can be of a specific type
+  type="1"	The list items will be numbered with numbers (default)
+  type="A"	The list items will be numbered with uppercase letters
+  type="a"	The list items will be numbered with lowercase letters
+  type="I"	The list items will be numbered with uppercase roman numbers
+  type="i"	The list items will be numbered with lowercase roman numbers
+
+  We can also have a list nested within itself and have different types of nested data
+  -->
+    <p>Nested List</p>
+    <ol type="1" start="1">
+      <li>Item 1</li>
+      <ul>
+        <li>Sub item 1</li>
+        <li>Sub item 2</li>
+      </ul>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+
+    <br />
+    <hr />
+    <h3>Tables</h3>
+    <!-- 
+  Tables are useful for displaying data. They are organized in a grid like pattern with rows and columns
+             columns
+            |   |   |
+            v   v   v
+  rows -> |___|___|___|
+  rows -> |___|___|___|
+  rows -> |___|___|___|
+  rows -> |___|___|___|
+  
+  They are structured first with the table tag, then they are made up of a table head (thead) and a table body (tbody).
+  
+  The head defines the column titles. To make it, we first add a thead tag, and within this tag, we make a table row (tr). Then, we give the table head values we want to see
+
+  The body defines the data entries for each row. To make it, we first add a tbody tag and within it, we add a table row (tr). This time around, we use a table data tag (td).
+
+  Lets take a look at some tables
+  -->
+    <table>
+      <caption>
+        Basic table
+      </caption>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Smith</td>
+          <td>37</td>
+        </tr>
+        <tr>
+          <td>Michael</td>
+          <td>Jackson</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <table>
+      <caption>
+        Table where 2 rows combine
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Telephone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Smith</td>
+          <td>(012)</td>
+          <td>345-678-9012</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <table>
+      <caption>
+        Table where column headers are in the left side
+      </caption>
+      <tr>
+        <th>Name:</th>
+        <td>John Snow</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Telephone:</th>
+        <td>(012)</td>
+        <td>345-678-9012</td>
+      </tr>
+    </table>
+
+    <br />
+    <hr />
+    <h3>Forms</h3>
+    <!--
+    Forms submit data to the server with HTML alone, it requires 4 elements:
+    • action: where the form will submit the data to
+    • fieldset: groups related elements in a form
+    • legend: defines the catption for the fieldset
+    • input: the data being inputted which has the following attributes
+      > type - The type of input it is
+      > name - The ID of the input value 
+      > value - The default value displayed
+      > placeholder - a ghostly text meant to server as an example or description of what to input in the field
+
+    
+    The different types that an input tag can be are:
+    - checked:	Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+    - disabled:	Specifies that an input field should be disabled
+    - max:	Specifies the maximum value for an input field
+    - maxlength:	Specifies the maximum number of character for an input field
+    - min:	Specifies the minimum value for an input field
+    - pattern:	Specifies a regular expression to check the input value against
+    - readonly:	Specifies that an input field is read only (cannot be changed)
+    - required:	Specifies that an input field is required (must be filled out)
+    - size:	Specifies the width (in characters) of an input field
+    - step:	Specifies the legal number intervals for an input field
+    - value:	Specifies the default value for an input field
+    - submit: Specifies that this is the submit trigger
+
+  Lets take a look!
+  -->
+    <form action="server.php">
+      <fieldset>
+        <legend>Personal Information</legend>
+        First Name: <br />
+        <input
+          type="text"
+          name="FirstName"
+          value=""
+          placeholder="First Name"
+        /><br />
+        Last Name: <br />
+        <input
+          type="text"
+          name="LastName"
+          value=""
+          placeholder="Last Name"
+        /><br />
+        <br />
+
+        What option? <br />
+        <input type="radio" name="options" title="option1" /> Option 1
+        <input type="radio" name="options" title="option2" /> Option 2 <br />
+        <input type="radio" name="options" title="option3" /> Option 3
+        <input type="radio" name="options" title="option4" /> Option 4
+        <input type="radio" name="options" title="option5" /> Option 5 <br />
+        <br />
+
+        Choose all that apply (checkbox) <br />
+        <input type="checkbox" name="checkboxes" id="1" checked title="cb1" />
+        Checkbox 1
+        <input type="checkbox" name="checkboxes" id="2" title="cb2" /> Checkbox
+        2
+        <input type="checkbox" name="checkboxes" id="3" title="cb3" /> Checkbox
+        3
+        <input type="checkbox" name="checkboxes" id="4" title="cb4" /> Checkbox
+        4 <br />
+        <!-- 
+        Notice: Checkbox 1 has a checked attribute to it. This means that by default Checkbox 1 will be selected
+      -->
+        <br />
+
+        <label for="color_select">Dropdown Menu</label><br />
+        <select name="colors" id="color_select" multiple>
+          <option value="red">red</option>
+          <option value="green" selected>green</option>
+          <option value="blue">blue</option>
+        </select>
+        <!-- 
+        Notice: dropdown menus can have a label, you can also add text and a br but this is the proper way to give a dropdown menu a title.
+
+        Notice: the select tag has the atrribute multiple. This attribute indicates that multiple items can be selected by pressing ctrl (Windows) or command (iOS). This is not required and can be removed in case we only want to make one selection from the dropdown menu
+        
+        Notice: the option "green" has a selected attribute to it. This means that by default "green" will be selected. 
+      -->
+        <br />
+        <br />
+        <input type="submit" value="Submit" /><br />
+      </fieldset>
+    </form>
+
+    <br />
+    <hr />
+
+    <h3>Buttons</h3>
+    <!--
+    Buttons are useful for users to interact with. They are typically handled with JavaScript, so this will be the last lesson for the HTML course. Now, technically we do not need JavaScript to make a website, so the next stop is Cascading Style Sheets (CSS)
+  -->
+    <button>Click Me</button>
+    <br />
+    <br />
+  </body>
+</html>

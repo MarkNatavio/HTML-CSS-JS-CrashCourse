@@ -1,0 +1,264 @@
+What is CSS?
+==============
+CSS stands for Cascading Style Sheets
+It is a style langauge and it is used to add a design or layout to a website.
+
+There are three different ways to incorporate CSS
+1) Inline - this is adding a style="..." property to an html tag. DO NOT DO THIS
+  + Bad practice
+  + Styles each element separately
+  + Not efficient
+  + Not scalable
+  + Ex.
+  <p style="color: blue">This Text Will Be Blue</p>
+
+2) Internal - this is adding a <style>...</style> tag within the header tag
+  + It is scalable throughout a file, but only that file
+  + Makes file sizes larger
+  + Ex.
+  <head>
+    <style>
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This Text Will Be Red</p>
+  </body>
+
+3) External - making use of a .css file and making use of it in the html page by using a <link href="style.css"> tag in the header
+  + Keeps styles separate from the HTML file
+  + Improved readability and usability
+  + It is scalable
+  + Reduces file size
+  + Ex.
+  [In .css file]
+  p {
+    color: green;
+  }
+
+  [In .html file]
+  <head>
+    <link rel="stylesheet" href="./css_file_source" />
+  </head>
+  <body>
+    <p>This Text Will Be Green</p>
+  </body>
+
+Keep in mind that CSS is *cascading* meaning that the last item is what will be read and applied. So if we had
+p {
+  color: green;
+  color: purple;
+}
+
+The final text color of the paragraph will be purple as green has been overwritten by purple. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Notice:
+We will incorporate CSS the third method as it is the best practice. This is because the third method keeps the HTML code separate from the CSS code, which improves readability. Also, the same css file can be applied to multiple html file pages.
+
+It is also possible to make multiple CSS files that apply to different elements or portions of the website being created. This is not a necessary step but it does help with readability.
+
+For instance, if we were to add a header, we will heave a header css file with only the styles that affect the header. Then, if we had a footer we would have a footer css file, where the footer's format will be kept.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Colors
+========
+We can give text colors in different ways
+1) HTML color names
+  Ex.
+    + red
+    + green
+    + blue
+
+2) Hexadecimal
+  Ex.
+    + #FF0000
+    + #00FF00
+    + #0000FF
+
+3) RGB/RGBA
+  Values range from 0 (lowest) to 255 (highest)
+  Ex.
+    + rgb(255, 101, 47)
+    + rgba(255, 101, 47, 1)
+
+The a in rgba stands for alpha. It determines the transparency of an object from 0 (completely transparent) to 1 (no transparency).
+
+
+
+Fonts (Serif vs Sans-Serif)
+=============================
+• Serif - fancy with more detail in the ends
+• Sans - More modern and plane
+
+Not all fonts work all the time but the safest ones are:
+• Arial
+• Helvetica
+• Times New Roman
+• Verdana
+
+[Notice: Make sure that the font you're using is a website font]
+
+We can also set mutliple font style families in case that one font doesn't load another one will.
+
+
+
+Units of measurement (Absolute Units vs Relative Units)
+=========================================================
+• Absolute units (e.g. px) are related to physical units of length. These approximate the actual size of the screen.
+  + Ex. px is the number of pixels that the image, boarder, or block will take up
+
+• Relative units (e.g. em) are relative to other length values
+  + Ex. em is based on the size of an element's font
+
+
+
+Borders
+=========
+The boarder box image in the HTML file showcases how a border is broken down
+• Margin - outside
+• Border - outside
+• Padding - inside
+• Content - inside
+
+Keep in mind that each layer is made up of 4 values:
+• top
+• right
+• bottom
+• left
+
+Typically, you can just write down the layer followed up by a hyphen (-) and the specific side you'd like to add space to.
+Ex.
+{
+  border-top: 5px;
+  border-right: 10px;
+  border-bottom: 15px;
+  border-left: 20px;
+}
+
+We can also simply use only two values.
+Ex. 
+{
+  border: 5px 10px;
+}
+Here both the top and bottom border layer will have a space of 5px.
+The right and left border layers will have a space of 10px.
+
+
+
+Targetting specific elements
+==============================
+Since the same element will be used multiple times throughout a website, we must know how to target specific elements.
+
+This way, we can make more dynamic designs as we provide elements with their own unique style.
+
+For instance, the footer will have a different style than the header.
+A Menu will have a different style than the body text.
+
+We can target a specific element by using one of the following attributes:
+• class
+• id
+
+class
+-------
+Use class when you need to use the same style multiple times throughout the page.
+Ex. 
+[in css file]
+.class_name {
+  color: black;
+}
+
+.class_name p { // to target specific element within
+  color: green;
+}
+
+[in html file]
+<div class="class_name">
+  <h1>this text will be black</h1>
+  <p>this text will be green</p>
+</div>
+
+
+id
+----
+Use id when targetting only one element once.
+Ex. 
+[in css file]
+#id_name {
+  color: black;
+}
+
+#id_name p { // to target specific element within
+  color: green;
+}
+
+[in html file]
+<div id="class_name">
+  <h1>this text will be black</h1>
+  <p>this text will be green</p>
+</div>
+
+As we can see, in both examples we use the div tag.
+This is a tag that will be used very often when building a website as it allows us to encompas multiple elements and separate sections.
+This is specifially important when making a website dynamic.
+
+Making a website dynamic is a more advanced topic so please review what we have discussed so far and check out simple applications of it in through the index.html and style.css files
+
+More CSS Tips & Tricks
+========================
+1) We can give multiple elements the exact same formats by using a coma (,)
+Ex.
+element1, element2, element3 {
+  background-color: black;
+  color: white;
+  border-color: red;
+}
+
+2) We can set an item's position by using the borders, but also by giving them propoerties
+Ex.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dynamic Websites
+==================
+The biggest struggle with CSS and frontend work is making a website dynamic.
+
+Dynamic refers to a website's ability to adapt to the device's screen. That is, making the website look good and keeping information readable no matter what.
+- If we were to access the website on a mobile device, ipad, wide monitor, etc.
+- If we were to change the orientation horizontaly or vertically.
+- If we were to change the dimensions of the window itself.
+
+This takes a ton of practice and most people struggle with it. 
+The best way to approach it is by moving step by step, breaking down designs into sub components and testing out different designs for each of them.
+
+One way to keep websites dynamic and in a more organized fashion is by using grids or flex boxes.
+
+Both of these can be organized in two ways:
+• Horizontally
+-------------------
+-------------------
+-------------------
+-------------------
+
+• Vertically
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+By combining these two, we can build virtually any design.
+
+
+Sample codes
+==============
+Now lets look at some sample codes to see what can be built
+
+• To view an example of a grid website design, check out grid.html and grid_style.css
+• To view an example of a flexbox website design, check out flexbox.html and flexbox_style.css
+• To view a simple website, check out the page.html file and page_style.css 

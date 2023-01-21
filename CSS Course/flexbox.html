@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Page</title>
+    <link rel="stylesheet" href="./flexbox_style.css" />
+  </head>
+  <body>
+    <p>Here, we can see how a flexbox structured as rows looks like.</p>
+    <div class="flexbox1">
+      <div class="col1">div1</div>
+      <div class="col2">
+        div2
+        <p>text</p>
+      </div>
+    </div>
+    <p>
+      From the code, notice that we have to set the width to each element (if
+      not reused), and that we do not need to set a number of columns or rows.
+      <br />
+      Instead, the flexbox will automatically generate each element within the
+      div as a new column.
+    </p>
+    <!-- *************************************************************** -->
+    <hr />
+    <p>Here, we have a longer flexbox in row structure.</p>
+    <div class="flexbox2">
+      <div class="col3">First column, this column contains a lot of data</div>
+      <div class="col4">
+        Second column, this column also contains a lot of data
+        <p>text</p>
+      </div>
+      <div class="col5">Third column, this column contains some data</div>
+      <div class="col6">Fourth column, not much data</div>
+    </div>
+    <p>
+      When we begin to change the window size and make its width smaller, a new
+      row isn't created.
+      <br />
+      Instead, the flexbox will adapt its size and content automatically. To
+      keep the size as stated and push the next column down, we must set
+      flex-wrap to wrap. like this
+      <div class="flexbox2_0">
+        <div class="col3">First column, this column contains a lot of data</div>
+        <div class="col4">
+          Second column, this column also contains a lot of data
+          <p>text</p>
+        </div>
+        <div class="col5">Third column, this column contains some data</div>
+        <div class="col6">Fourth column, not much data</div>
+      </div>
+    </p>
+    <!-- *************************************************************** -->
+    <hr />
+    <p>
+      Here, we make use of a flex for size. <br />
+      flex works just like fr and it takes up the rest of the screen.
+    </p>
+    <div class="flexbox3">
+      <div class="col7">Width: 100px</div>
+      <div class="col8">flex: 1</div>
+    </div>
+    <!-- *************************************************************** -->
+    <hr />
+    <p>
+      Here, we add another flex column but of size flex: 2. <br />
+      Just like with fr, the remaining space is split into 3 portions. <br />
+      The second row takes up 1/3rd and the third row takes up 2/3rds
+    </p>
+    <div class="flexbox4">
+      <div class="col9">width: 100px</div>
+      <div class="col10">flex1</div>
+      <div class="col11">flex2</div>
+    </div>
+    <!-- *************************************************************** -->
+    <hr />
+    <p>Now, lets explore a flexbox with the flex-direction column</p>
+    <div class="flexbox5">
+      <div class="row1">height: 50px</div>
+      <div class="row2">height: 50px</div>
+      <div class="row3">height: 50px</div>
+    </div>
+    <!-- *************************************************************** -->
+    <hr />
+    <p>Now the exciting stuff starts. Lets combine the column and row setup</p>
+    <div class="advanced">
+      <div class="header">
+        <h3 id="lheader">Left</h3>
+        <h3 id="mheader">Middle</h3>
+        <h3 id="rheader">Right</h3>
+      </div>
+
+      <div class="body">
+        <div class="side_bar">
+          <div class="alert">
+            <div class="little_item">3</div>
+            <img src="../Images/bell.png" alt="Bell" id="bell" />
+          </div>
+          <div class="something_else">Something else</div>
+        </div>
+
+        <div class="body_content">
+            <div class="block1">Block 1</div>
+            <div class="block2">
+              Block 2
+              <div class="b2_content">
+                <div class="b2_cont_1">
+                  Item 1
+                  <p>Content Description</p>
+                </div>
+                <div class="b2_cont_2">
+                  Item 2
+                  <img src="../Images/fire.png" alt="Fire" id="fire" />
+                </div>
+                <div class="b2_cont_3">Item 3</div>
+              </div>
+            </div>
+            <div class="block3">
+              Block 3
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Molestias qui nulla voluptates hic. Praesentium deserunt omnis
+                iste id debitis quod soluta, ab culpa obcaecati asperiores
+                dolores quia nesciunt ipsam suscipit.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      As we can clearly see, this is a more advanced design that ressembles a
+      website
+    </p>
+  </body>
+</html>

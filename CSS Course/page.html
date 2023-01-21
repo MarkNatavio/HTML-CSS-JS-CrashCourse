@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Beginner Website</title>
+    <link rel="stylesheet" href="./page_style.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./footer.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="mainHeader">
+      <div class="container">
+        <h1>Main Header</h1>
+      </div>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav id="mainNav">
+      <div class="container">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page content -->
+    <div class="grid-container">
+      <div class="main-content">
+        <!-- First Block -->
+        <section id="jumbo">
+          <div class="container">
+            <h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, eos?
+            </h1>
+          </div>
+        </section>
+
+        <!-- Body Content -->
+        <div class="example">
+          <h1>Example</h1>
+          <div class="example2">
+            <p>Here</p>
+          </div>
+          <p>Here 2</p>
+        </div>
+        <div class="container">
+          <!-- Left Text -->
+          <aside id="sidebar">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              quas ipsam sapiente labore soluta quidem quam tempora ullam
+              adipisci provident odit, consequatur officiis nobis ratione?
+            </p>
+          </aside>
+
+          <!-- Right Text -->
+          <section id="main">
+            <h2>Section Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              itaque corrupti distinctio tempora ipsum, in architecto eos
+              tenetur minus iure iste sit aperiam quisquam perferendis quasi
+              fugit libero, quo provident!
+            </p>
+          </section>
+
+          <div class="clearFix"></div>
+          <div id="pExample">
+            <span>Span 1</span>
+            <span>Span 2</span>
+          </div>
+          <button class="click-me-button">Click Me</button>
+          <button class="button2">Do not click me</button>
+          <button class="button3">Third Button</button>
+
+          <form action="server.php" class="form">
+            <fieldset>
+              <legend>Personal Information</legend>
+              First Name: <br />
+              <input
+                type="text"
+                name="FirstName"
+                value=""
+                placeholder="First Name"
+              /><br />
+              Last Name: <br />
+              <input
+                type="text"
+                name="LastName"
+                value=""
+                placeholder="Last Name"
+              /><br />
+              <br />
+
+              What option? <br />
+              <input title="firstOption" type="radio" name="options" /> Option1
+              <input title="secondOption" type="radio" name="options" /> Option2
+              <input title="thirdOption" type="radio" name="options" /> Option3
+              <input title="fourthOption" type="radio" name="options" /> Option4
+              <input title="fifthOption" type="radio" name="options" /> Option5
+              <br />
+              <br />
+
+              Choose all that apply (checkbox) <br />
+              <input
+                title="checkbox1"
+                type="checkbox"
+                name="checkboxes"
+                id="1"
+                checked
+              />
+              Checkbox 1
+              <input
+                title="checkbox2"
+                type="checkbox"
+                name="checkboxes"
+                id="2"
+              />
+              Checkbox 2
+              <input
+                title="checkbox3"
+                type="checkbox"
+                name="checkboxes"
+                id="3"
+              />
+              Checkbox 3
+              <input
+                title="checkbox4"
+                type="checkbox"
+                name="checkboxes"
+                id="4"
+              />
+              Checkbox 4
+              <br />
+              <br />
+
+              <label for="color_select">Dropdown Menu</label><br />
+              <select name="colors" id="color_select" multiple>
+                <option value="red">red</option>
+                <option value="green" selected>green</option>
+                <option value="blue">blue</option>
+              </select>
+              <br />
+              <br />
+              <input type="submit" value="Submit" /><br />
+            </fieldset>
+          </form>
+        </div>
+        <div id="fixed">Fixed Element</div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="mainFooter">
+        <p>Copyright &copy;2019 Bginners Website</p>
+      </footer>
+    </div>
+  </body>
+</html>
