@@ -5,10 +5,10 @@ body {
 
 img {
   width: 250px;
-  border: 10px solid cyan;
+  border: 10px solid red;
 }
 
-p.username {
+.username {
   color: green;
   font-family: 'Times New Roman', Times, serif;  
 }
